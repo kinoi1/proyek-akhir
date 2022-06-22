@@ -12,6 +12,7 @@ class Dynamic_form extends MY_Controller
     public function index()
     {
         $this->load->view('dynamic_form');
+        $this->load->view('template/footer');
     }
 
     public function save_detail()
@@ -25,6 +26,8 @@ class Dynamic_form extends MY_Controller
             );
             $result = $this->db->insert('dynamic_form', $data_arr);
         }
+        print_r($data_arr);
+        die();
         if ($result) {
             echo '<script>
             alert("data inserted successfully");

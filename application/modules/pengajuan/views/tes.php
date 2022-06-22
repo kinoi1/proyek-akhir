@@ -1,24 +1,24 @@
-<html>
-    <head>
 
-    </head>
-    <body>
-        
-        <th>id</th>
-        <th>nama</th>
-        <th>email</th>
-        <th>pass</th>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<select id="itemcondition" class="itemconditionmenu">
+  <option value="">Choose Condition</option>
+  <option value="New">New</option>
+  <option value="Used">Used</option>
+</select>
+<input id="meta_itemcondition" type="text" value="New">
 
-        <?php foreach ($data_tes->result_array() as $row){ ?>    
-        <tr>
-            <td> Nama : <?php echo $row['vFullName'] ?></td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <?php } ?>
-    </body>
-</html>
+<script>
+$( document ).ready(function() {
+  var conditionofitem = $("#meta_itemcondition").val();
+  $(".itemconditionmenu").val(conditionofitem);
+});
+
+$(".itemconditionmenu").change(function() {
+var conditionofitem = $(this).val();
+if(conditionofitem == '') {
+    $("#meta_itemcondition").val('Choose Condition');
+ } else {
+    $("#meta_itemcondition").val(conditionofitem);
+ }
+});
+</script>
