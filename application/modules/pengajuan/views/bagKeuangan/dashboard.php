@@ -78,12 +78,12 @@
                             </div>
                             <div class="article-details">
                               <div class="article-title">
-                                <h2><a href="#">Kelola SBM</a></h2>
+                                <h2><a href="<?= base_url('Pengajuan/bagkeuangan/DaftarSBM');?>">Kelola SBM</a></h2>
                               </div>
                               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
                               cillum dolore eu fugiat nulla pariatur. </p>
                               <div class="article-cta">
-                                <a href="#">Read More <i class="fas fa-chevron-right"></i></a>
+                                <a href="<?= base_url('Pengajuan/bagkeuangan/DaftarSBM');?>">Read More <i class="fas fa-chevron-right"></i></a>
                               </div>
                             </div>
                           </article>

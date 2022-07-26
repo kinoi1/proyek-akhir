@@ -15,10 +15,14 @@
   <script src="<?= base_url('assets/stisla-master/assets/js/custom.js')?>"></script>
 
   <!-- Page Specific JS File -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+</div>
+</div>
 </body>
 </html>
+
 <script>
 $( function() {
 $( "#datepicker" ).datepicker();

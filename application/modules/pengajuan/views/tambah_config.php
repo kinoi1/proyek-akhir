@@ -3,11 +3,9 @@
                   <div class="card-body">
                     <div class="section-title mt-0">Text</div>
                     <?php
-                    echo form_open_multipart("Pengajuan/PengajuanPP/save_detail") ;
+                    echo form_open_multipart("Pengajuan/BagKeuangan/save_detail") ;
                     ?>
-                        <button type="button" id="btn_add_pengajuan" class="btn btn-primary add-btn-head mt-5"
-                            title="Add More" style="float:right; margin-top: 20px; margin-bottom: 20px;">Add
-                            More</button>
+                        
                         <div class="row">
                             <div class="form-group col-lg-12 mb-2">
                                 <div id="dynamic_pengajuan">

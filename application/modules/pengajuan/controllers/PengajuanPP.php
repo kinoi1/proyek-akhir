@@ -49,21 +49,13 @@ class PengajuanPP extends MY_Controller {
       $data = $this->M_tes->getSBM($id);
         echo json_encode($data);
     }
-    public function DaftarSBM() {
 
-      $data['dat'] = $this->load->M_tes->getconfig();
-      $this->load->view('template/header');
-      $this->load->view('template/navbar');
-      $this->load->view('template/sidebar');
-      $this->load->view('dasboard_sbm',$data);
-      $this->load->view('template/footer');
-    }
 
     public function save_detail()
     {
 
         $request = $this->input->post();
-         print_r($request);die;
+         
 
         $data_arr = array();
         for ($m = 1; $m <= $request['license_count']; $m++) {

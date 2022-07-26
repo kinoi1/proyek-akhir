@@ -1,7 +1,7 @@
 <div class="col-12">
                 <div class="card" >
                   <div class="card-body">
-                    <a class="btn btn-success" href="<?= base_url('pengajuan/pengajuanpp/tambahconfig');?>"> Tambah SBM </a>
+                    <a class="btn btn-success" href="<?= base_url('pengajuan/BagKeuangan/tambahSBM');?>"> Tambah SBM </a>
                     <table class="table table-sm">
                     <thead>
                       <tr>
@@ -34,4 +34,5 @@
                   </table>
                 </div>
               </div>
+</div>
 </div>

@@ -1,19 +1,22 @@
-<!--<div class="col-12">
+<div class="col-12">
                 <div class="card" >
                   <div class="card-body">
                     <h2> Usulan Kegiatan Akademik</h2>
 
-                    <?= form_open_multipart('pengajuan/pengajuan/tess_fungsi'); ?>
+                    <?php //form_open_multipart('pengajuan/pengajuan/tess_fungsi'); ?>
+                    <form class="" action="<?= base_url('pengajuan/pengajuan/tess_fungsi');?>" method="post">
+
                       <div class="row">
                           <div class="form-group col-lg-12 mb-2">
                             <div class="row">
                               <div class="form-group col-lg-2">
                                 <label> kode</label>
-                                <input class="form-control name-list" type="text" placeholder="" name="kode">
+                                <input class="form-control name-list" type="text" placeholder="" name="kode" value="<?= set_value('kode');?>">
+                                <?= set_value('kode');?>
                               </div>
                       <div class="form-group col-lg-4">
                         <label> program Kegiatan</label>
-                        <input class="form-control name-list" type="text" placeholder="" name="program_kegiatan">
+                        <input class="form-control name-list" type="text" placeholder="" name="program_kegiatan"<?= set_value('program_kegiatan');?>>
                       </div>
                       <div class="form-group col-lg-3">
                         <label> Jenis Kegiatan</label>
@@ -77,9 +80,9 @@
                   </form>
                   </div>
                 </div>
-              </div> -->
+              </div>
 
-
+<?php /*
 <div class="col-12">
   <div class="card" >
     <div class="card-body">
@@ -106,3 +109,4 @@
     </div>
   </div>
 </div>
+*/?>
