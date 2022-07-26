@@ -27,9 +27,11 @@ class Login extends MY_Controller {
       }else if($user['role'] == "bagkeuangan"){
         redirect('bagkeuangan');
       }else if($user['role'] == "ppspm"){
-        redirect('approval');
+        redirect('approval/approval');
       }else if($user['role'] == "ppk"){
-        redirect('approval');
+        redirect('approval/approval');
+      }else if($user['role'] == "direktur"){
+        redirect('approval/approval');
       }
         print_r($data);
     } else {
